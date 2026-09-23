@@ -7,11 +7,13 @@
 <style>
   :root { color-scheme: light dark; }
   body { margin: 0; font-family: -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #F7F5F0; color: #2F3A4A; line-height: 1.6; }
-  @media (prefers-color-scheme: dark) { body { background: #15181E; color: #E8ECF2; } .card { background: #1F242C; } }
+  @media (prefers-color-scheme: dark) { body { background: #15181E; color: #E8ECF2; } .card { background: #1F242C; } a { color: #9DBBFF; } }
   main { max-width: 720px; margin: 0 auto; padding: 32px 20px 64px; }
   .card { background: #fff; border-radius: 20px; padding: 24px 28px; margin-top: 16px; }
   h1 { font-size: 28px; margin: 0 0 4px; }
   h2 { font-size: 20px; margin: 24px 0 8px; }
+  ul { padding-left: 22px; }
+  li { margin-bottom: 6px; }
   .lang { display: flex; gap: 8px; margin-top: 12px; }
   .lang button { border: 0; border-radius: 999px; padding: 8px 16px; font-weight: 700; cursor: pointer; background: #DCE8FF; color: #2F3A4A; }
   .lang button[aria-pressed="true"] { background: #5B8DEF; color: #fff; }
@@ -29,36 +31,88 @@
 
   <section id="en" class="card">
     <h2>Privacy Policy</h2>
-    <p class="muted">Last updated: 7 September 2026</p>
-    <p>Dalira is an app for autistic children and their families. We built it so that <strong>no personal data ever leaves your device</strong>. This page explains exactly what that means.</p>
-    <h2>What we collect</h2>
-    <p><strong>Nothing.</strong> Dalira has no user accounts, no servers of its own, no analytics, no advertising, and no tracking of any kind. We do not collect names, photos, voice, location, device identifiers or usage statistics.</p>
-    <h2>Data stored on your device</h2>
-    <p>Routines, talk cards, the child's first name, game results and any photos you attach are stored only in the app's private storage on your device. They are never uploaded. Deleting the app deletes this data.</p>
-    <h2>Photos and microphone</h2>
-    <p>If you add your own photo to a card or routine step, the app asks for access to your photo library and copies only the selected image into its private storage. Dalira does not use the microphone. Speech is produced by your device's built-in text-to-speech engine and is not recorded.</p>
-    <h2>Purchases</h2>
-    <p>Premium subscriptions are processed by Apple App Store or Google Play. To validate purchases we use RevenueCat, which receives an anonymous app-generated identifier and purchase receipt. RevenueCat does not receive your name, email or any content from the app. See the <a href="https://www.revenuecat.com/privacy">RevenueCat privacy policy</a>.</p>
+    <p class="muted">Last updated: 23 September 2026</p>
+    <p>Dalira is an app for autistic children and their families, published by Birim Ajans Yazılım Limited Şirketi (“Birim Ajans”, “we”). This page explains what data the app handles, why, who receives it, and how to have it deleted.</p>
+
+    <h2>In short</h2>
+    <ul>
+      <li>Dalira has no user accounts, no advertising, no analytics and no tracking.</li>
+      <li>Everything your family creates in Dalira (routines, talk cards, the child’s name, game results, photos) stays on your device.</li>
+      <li>To make in-app purchases work, the app uses RevenueCat, our purchase service provider. RevenueCat receives an anonymous app user ID and your purchase history. It does not receive your name, your email address or anything created in the app.</li>
+    </ul>
+
+    <h2>Data stored only on your device</h2>
+    <p>Routines, talk cards, the child’s first name, game results, photos you add and app settings (language, speech rate, appearance) are stored in the app’s private storage on your device. Dalira does not upload them. Deleting the app deletes this data from the device. If you use your device’s own backup (iCloud or Google backup), your operating system may include app data in that backup; we have no access to it.</p>
+
+    <h2>Data processed for purchases</h2>
+    <p>When Dalira starts, it connects to RevenueCat, Inc. to check whether Premium is active, to show the available plans, and to process purchases and restores. For this, RevenueCat receives:</p>
+    <ul>
+      <li><strong>An anonymous app user ID:</strong> a random identifier created by the app. It is not linked to your name, email address or any contact information.</li>
+      <li><strong>Purchase history:</strong> which Premium product was bought, when, and its status (for example trial, active or expired), together with the store’s transaction and receipt identifiers.</li>
+      <li><strong>Technical request data:</strong> app version, operating system version, device model, language and region settings, and store country. On iPhone and iPad this also includes Apple’s identifier for vendor (IDFV), a device identifier that is specific to our apps; it is not the advertising identifier. As with any internet connection, RevenueCat’s servers also see the IP address of the connection.</li>
+    </ul>
+    <p>We use this data only to verify and restore purchases and to unlock Premium. It is not used for advertising or tracking, and it is not sold. RevenueCat processes it on our behalf as our service provider; see the <a href="https://www.revenuecat.com/privacy">RevenueCat privacy policy</a>. Purchase data is kept for as long as it is needed to provide and restore Premium, or until you ask us to delete it (see below).</p>
+    <p>Payments are made through the Apple App Store or Google Play. Apple and Google process the payment and keep their own purchase records under their own privacy policies (<a href="https://www.apple.com/legal/privacy/">Apple</a>, <a href="https://policies.google.com/privacy">Google</a>). Dalira never sees your payment card details.</p>
+
+    <h2>What Dalira does not collect</h2>
+    <p>Dalira does not collect names, email addresses, phone numbers, contacts, location, the advertising identifier (IDFA or Android advertising ID), analytics or usage statistics, photos, voice recordings, or anything you create in the app. The app contains no advertising or analytics SDKs.</p>
+
+    <h2>Photos, speech and sharing</h2>
+    <p>If you add your own photo to a card or routine step, Dalira opens your device’s photo picker and copies only the photo you choose into its private storage. Dalira does not use the microphone and does not record audio; spoken words come from the text-to-speech engine installed on your device. The progress report can be shared only after the parental gate: Dalira hands the report text (the child’s first name and a summary of game and routine results) to the app you choose in the system share sheet, for example Messages or email. Dalira does not send it anywhere itself.</p>
+
     <h2>Children</h2>
-    <p>Dalira is designed for children and follows Apple's Kids Category and Google Play Families requirements. Purchases and settings sit behind a parental gate. Because we collect no personal information, no data about children is processed by us.</p>
+    <p>Dalira is made for children to use with a parent or caregiver. We do not collect personal information from children: nothing a child enters or creates in the app leaves the device. The only data that leaves the device is the purchase data described above (anonymous app user ID, purchase status and technical request data), processed so that a purchase made by a parent works. Purchases, restoring purchases, the Privacy Policy and Terms of Use links, settings, editing and sharing are behind a parental gate (a question for adults). There are no ads, no chat and no way for a child to contact other people through the app.</p>
+
+    <h2 id="delete-data">Deleting your data</h2>
+    <p><strong>On your device:</strong> delete the app. This removes everything Dalira stored on the device, including the anonymous app user ID. Copies inside your own iCloud or Google device backup are managed in your device settings.</p>
+    <p><strong>At RevenueCat:</strong> email <a href="mailto:nonanik@gmail.com?subject=Dalira%20data%20deletion">nonanik@gmail.com</a> with the subject “Dalira data deletion”. Dalira has no accounts, so to find your record please include the order number of your purchase: for Apple, the Order ID shown in your App Store receipt email or at <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a>; for Google Play, the order number starting with “GPA.” in your receipt email. We will delete the matching RevenueCat customer record (anonymous app user ID and purchase history) within 30 days of your request and confirm by email. You do not need to send any other information.</p>
+    <p>Deleting the record does not cancel a subscription; cancel it first in your App Store or Google Play subscription settings. Apple and Google keep their own records of the purchase under their own policies and legal obligations; we cannot delete those.</p>
+    <p>If you never made a purchase, RevenueCat holds only an anonymous app user ID and technical request data, with no purchase history and nothing that links it to you, so we cannot look it up. Deleting the app stops any further connection from your device.</p>
+
     <h2>Changes and contact</h2>
     <p>If this policy changes, the new version will be published on this page with an updated date. Questions: <a href="mailto:nonanik@gmail.com">nonanik@gmail.com</a>.</p>
   </section>
 
   <section id="tr" class="card" hidden>
     <h2>Gizlilik Politikası</h2>
-    <p class="muted">Son güncelleme: 7 Eylül 2026</p>
-    <p>Dalira, otizmli çocuklar ve aileleri için bir uygulamadır. <strong>Hiçbir kişisel veri cihazınızdan dışarı çıkmayacak</strong> şekilde tasarlandı. Bu sayfa bunun tam olarak ne anlama geldiğini açıklar.</p>
-    <h2>Ne topluyoruz</h2>
-    <p><strong>Hiçbir şey.</strong> Dalira'da kullanıcı hesabı, kendi sunucusu, analitik, reklam veya herhangi bir takip yoktur. İsim, fotoğraf, ses, konum, cihaz kimliği veya kullanım istatistiği toplamıyoruz.</p>
-    <h2>Cihazınızda saklanan veriler</h2>
-    <p>Rutinler, konuşma kartları, çocuğun adı, oyun sonuçları ve eklediğiniz fotoğraflar yalnızca cihazınızdaki uygulama özel alanında saklanır. Hiçbir zaman yüklenmez. Uygulamayı silmek bu verileri de siler.</p>
-    <h2>Fotoğraflar ve mikrofon</h2>
-    <p>Bir karta veya rutin adımına kendi fotoğrafınızı eklerseniz uygulama fotoğraf kitaplığı izni ister ve yalnızca seçtiğiniz görseli kendi özel alanına kopyalar. Dalira mikrofonu kullanmaz. Sesler cihazınızın yerleşik metin okuma motoru tarafından üretilir ve kaydedilmez.</p>
-    <h2>Satın almalar</h2>
-    <p>Premium abonelikler Apple App Store veya Google Play tarafından işlenir. Satın almaları doğrulamak için RevenueCat kullanıyoruz; RevenueCat yalnızca uygulamanın ürettiği anonim bir kimlik ve satın alma makbuzu alır. Adınızı, e-postanızı veya uygulama içeriğinizi almaz. Bkz. <a href="https://www.revenuecat.com/privacy">RevenueCat gizlilik politikası</a>.</p>
+    <p class="muted">Son güncelleme: 23 Eylül 2026</p>
+    <p>Dalira, otizmli çocuklar ve aileleri için bir uygulamadır; yayıncısı Birim Ajans Yazılım Limited Şirketi’dir (“Birim Ajans”, “biz”). Bu sayfa uygulamanın hangi verileri işlediğini, neden işlediğini, kimlerin aldığını ve bu verileri nasıl sildirebileceğinizi açıklar.</p>
+
+    <h2>Kısaca</h2>
+    <ul>
+      <li>Dalira’da kullanıcı hesabı, reklam, analitik ve takip yoktur.</li>
+      <li>Ailenizin Dalira’da oluşturduğu her şey (rutinler, konuşma kartları, çocuğun adı, oyun sonuçları, fotoğraflar) cihazınızda kalır.</li>
+      <li>Uygulama içi satın almaların çalışması için uygulama, satın alma hizmet sağlayıcımız RevenueCat’i kullanır. RevenueCat anonim bir uygulama kullanıcı kimliği ve satın alma geçmişinizi alır. Adınızı, e-posta adresinizi veya uygulamada oluşturduğunuz hiçbir içeriği almaz.</li>
+    </ul>
+
+    <h2>Yalnızca cihazınızda saklanan veriler</h2>
+    <p>Rutinler, konuşma kartları, çocuğun adı, oyun sonuçları, eklediğiniz fotoğraflar ve uygulama ayarları (dil, konuşma hızı, görünüm) cihazınızdaki uygulama özel alanında saklanır. Dalira bunları yüklemez. Uygulamayı silmek bu verileri cihazdan siler. Cihazınızın kendi yedeklemesini (iCloud veya Google yedeği) kullanıyorsanız işletim sisteminiz uygulama verilerini bu yedeğe dahil edebilir; bu yedeğe bizim erişimimiz yoktur.</p>
+
+    <h2>Satın almalar için işlenen veriler</h2>
+    <p>Dalira açıldığında Premium’un etkin olup olmadığını kontrol etmek, planları göstermek ve satın alma ile geri yükleme işlemlerini yürütmek için RevenueCat, Inc.’e bağlanır. Bunun için RevenueCat şunları alır:</p>
+    <ul>
+      <li><strong>Anonim uygulama kullanıcı kimliği:</strong> uygulamanın ürettiği rastgele bir kimlik. Adınız, e-posta adresiniz veya herhangi bir iletişim bilginizle ilişkili değildir.</li>
+      <li><strong>Satın alma geçmişi:</strong> hangi Premium ürünün ne zaman alındığı ve durumu (örneğin deneme, etkin veya süresi dolmuş), mağazanın işlem ve makbuz kimlikleriyle birlikte.</li>
+      <li><strong>Teknik istek verileri:</strong> uygulama sürümü, işletim sistemi sürümü, cihaz modeli, dil ve bölge ayarları ve mağaza ülkesi. iPhone ve iPad’de buna Apple’ın satıcıya özgü tanımlayıcısı (IDFV) da dahildir; bu, yalnızca bizim uygulamalarımıza özgü bir cihaz tanımlayıcısıdır, reklam kimliği değildir. Her internet bağlantısında olduğu gibi RevenueCat sunucuları bağlantının IP adresini de görür.</li>
+    </ul>
+    <p>Bu verileri yalnızca satın almaları doğrulamak ve geri yüklemek ve Premium’u açmak için kullanırız. Reklam veya takip için kullanılmaz ve satılmaz. RevenueCat bu verileri hizmet sağlayıcımız olarak bizim adımıza işler; bkz. <a href="https://www.revenuecat.com/privacy">RevenueCat gizlilik politikası</a>. Satın alma verileri Premium’u sağlamak ve geri yüklemek için gerektiği sürece ya da silinmesini isteyene kadar saklanır (aşağıya bakın).</p>
+    <p>Ödemeler Apple App Store veya Google Play üzerinden yapılır. Ödemeyi Apple ve Google işler ve kendi satın alma kayıtlarını kendi gizlilik politikalarına göre tutar (<a href="https://www.apple.com/legal/privacy/">Apple</a>, <a href="https://policies.google.com/privacy">Google</a>). Dalira kart bilgilerinizi hiçbir zaman görmez.</p>
+
+    <h2>Dalira’nın toplamadıkları</h2>
+    <p>Dalira ad, e-posta adresi, telefon numarası, kişiler, konum, reklam kimliği (IDFA veya Android reklam kimliği), analitik veya kullanım istatistiği, fotoğraf, ses kaydı ya da uygulamada oluşturduğunuz herhangi bir içerik toplamaz. Uygulamada reklam veya analitik SDK’sı yoktur.</p>
+
+    <h2>Fotoğraflar, ses ve paylaşım</h2>
+    <p>Bir karta veya rutin adımına kendi fotoğrafınızı eklerseniz Dalira cihazınızın fotoğraf seçicisini açar ve yalnızca seçtiğiniz fotoğrafı kendi özel alanına kopyalar. Dalira mikrofonu kullanmaz ve ses kaydetmez; sesler cihazınızda yüklü metin okuma motoru tarafından üretilir. İlerleme raporu yalnızca ebeveyn kapısı geçildikten sonra paylaşılabilir: Dalira rapor metnini (çocuğun adı ile oyun ve rutin sonuçlarının özeti) sistem paylaşım penceresinde seçtiğiniz uygulamaya, örneğin Mesajlar’a veya e-postaya verir. Dalira bu metni kendisi hiçbir yere göndermez.</p>
+
     <h2>Çocuklar</h2>
-    <p>Dalira çocuklar için tasarlanmıştır ve Apple Çocuk Kategorisi ile Google Play Aileler gerekliliklerine uyar. Satın alma ve ayarlar ebeveyn kilidinin arkasındadır. Kişisel bilgi toplamadığımız için çocuklara ait hiçbir veri tarafımızca işlenmez.</p>
+    <p>Dalira, çocukların bir ebeveyn veya bakım veren eşliğinde kullanması için yapılmıştır. Çocuklardan kişisel bilgi toplamayız: çocuğun uygulamada girdiği veya oluşturduğu hiçbir şey cihazdan çıkmaz. Cihazdan çıkan tek veri yukarıda açıklanan satın alma verileridir (anonim uygulama kullanıcı kimliği, satın alma durumu ve teknik istek verileri) ve ebeveynin yaptığı satın almanın çalışması için işlenir. Satın alma, satın almaları geri yükleme, Gizlilik Politikası ve Kullanım Koşulları bağlantıları, ayarlar, düzenleme ve paylaşım ebeveyn kapısının (yetişkinlere yönelik bir soru) arkasındadır. Uygulamada reklam ve sohbet yoktur; çocuk uygulama üzerinden başka kişilerle iletişim kuramaz.</p>
+
+    <h2 id="veri-silme">Verilerinizi silme</h2>
+    <p><strong>Cihazınızda:</strong> uygulamayı silin. Bu, anonim uygulama kullanıcı kimliği dahil Dalira’nın cihazda sakladığı her şeyi kaldırır. Kendi iCloud veya Google cihaz yedeğinizdeki kopyalar cihaz ayarlarınızdan yönetilir.</p>
+    <p><strong>RevenueCat’te:</strong> <a href="mailto:nonanik@gmail.com?subject=Dalira%20veri%20silme">nonanik@gmail.com</a> adresine “Dalira veri silme” konulu bir e-posta gönderin. Dalira’da hesap olmadığı için kaydınızı bulabilmemiz amacıyla satın alma işleminizin sipariş numarasını ekleyin: Apple için App Store makbuz e-postanızda veya <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a> adresinde görünen Sipariş Kimliği (Order ID); Google Play için makbuz e-postanızdaki “GPA.” ile başlayan sipariş numarası. Eşleşen RevenueCat müşteri kaydını (anonim uygulama kullanıcı kimliği ve satın alma geçmişi) talebinizden itibaren 30 gün içinde siler ve e-postayla onaylarız. Başka bir bilgi göndermeniz gerekmez.</p>
+    <p>Kaydın silinmesi aboneliği iptal etmez; aboneliği önce App Store veya Google Play abonelik ayarlarınızdan iptal edin. Apple ve Google satın almaya ait kendi kayıtlarını kendi politikaları ve yasal yükümlülükleri gereği saklar; bunları biz silemeyiz.</p>
+    <p>Hiç satın alma yapmadıysanız RevenueCat’te yalnızca anonim uygulama kullanıcı kimliği ve teknik istek verileri bulunur; satın alma geçmişi ve sizinle ilişkilendiren bir bilgi olmadığı için bu kaydı bulamayız. Uygulamayı silmek cihazınızdan başka bağlantı kurulmasını durdurur.</p>
+
     <h2>Değişiklikler ve iletişim</h2>
     <p>Bu politika değişirse yeni sürüm güncel tarihle bu sayfada yayımlanır. Sorular için: <a href="mailto:nonanik@gmail.com">nonanik@gmail.com</a>.</p>
   </section>
@@ -71,7 +125,11 @@
     }
     document.documentElement.lang = code;
   }
-  if ((navigator.language || '').toLowerCase().startsWith('tr')) show('tr');
+  // Open the language of a linked section (e.g. #veri-silme); otherwise follow the browser language.
+  const hedef = location.hash ? document.getElementById(location.hash.slice(1)) : null;
+  const hedefDil = hedef ? hedef.closest('section') : null;
+  if (hedefDil) { show(hedefDil.id); hedef.scrollIntoView(); }
+  else if ((navigator.language || '').toLowerCase().startsWith('tr')) show('tr');
 </script>
 </body>
 </html>
